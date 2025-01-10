@@ -1,0 +1,110 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212; /* Fallback background color */
+    color: #ffffff;
+  }
+  
+  /* Container for the entire page */
+  .container {
+    width: 100%;
+    height: 100%;
+    background-image: url('index.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Form container with square box style */
+  .registration-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for better contrast */
+    padding: 40px;
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: left; /* Align text to the left */
+    width: 100%;
+    max-width: 500px; /* Maximum width of the box */
+    aspect-ratio: 1; /* Make the box square */
+    border: 2px solid #1db954; /* Add a green border for the rectangular effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out the form fields */
+  }
+  
+  /* Heading styling */
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  /* Input fields */
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #2e2e2e;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #1db954;
+  }
+  
+  /* Radio buttons */
+  input[type="radio"] {
+    margin-left: 5px;
+  }
+  
+  /* Submit button */
+  input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #1db954;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #17a445;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .registration-container {
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    input,
+    textarea,
+    input[type="submit"] {
+      font-size: 14px;
+    }
+  }
+  
